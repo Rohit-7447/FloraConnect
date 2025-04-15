@@ -64,7 +64,7 @@ a:focus {
     @include trans-duration(500ms);
     text-decoration: none;
     outline: 0 solid transparent;
-    color: $heading-color;
+    color: #ffffff;
     font-weight: 500;
     font-size: 14px;
 }
@@ -632,13 +632,13 @@ img {
     }
     .is-sticky {
         .alazea-main-menu {
-            background-color: $dark-color;
+            background-color: transparent;
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
             z-index: 9999;
-            box-shadow: 0 5px 50px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: none;
         }
     }
     #searchIcon {
@@ -2015,7 +2015,7 @@ img {
     &:hover {
         @include transform(translateY(-15px));
         .portfolio-hover-overlay {
-            opacity: 1;
+            opacity: 0;
             visibility: visible;
         }
     }
@@ -2238,10 +2238,13 @@ img {
         .contact-information {
             p {
                 line-height: 1.3;
-                color: $white-color;
+                color: #ffffff;
                 margin-bottom: 13px;
                 span {
-                    color: $secondary-color;
+                    color: #ffffff;
+                }
+                a{
+                    color: #ffffff;
                 }
                 &:last-child {
                     margin-bottom: 0;
@@ -2991,10 +2994,13 @@ img {
 .contact-information {
     p {
         line-height: 1.3;
-        color: $text-color;
+        color: #ffffff;
         margin-bottom: 13px;
         span {
-            color: $heading-color;
+            color: #ffffff;
+        }
+        a{
+            color:#ffffff;
         }
         &:last-child {
             margin-bottom: 0;
